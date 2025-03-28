@@ -1,0 +1,157 @@
+/*
+  Color de fondo: hsl(185, 75%, 39%)
+  Color del texto gris: hsl(227, 10%, 46%)
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+
+  background-color: hsl(185, 75%, 39%);
+  font-family: sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* Centra verticalmente */
+  min-height: 100vh;      /* Asegura que el body ocupe toda la altura de la ventana */
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1;
+  text-align: center;
+  background-color: rgb(45, 101, 146);
+  height: 60px; /* Define una altura fija para el header */
+}
+
+footer {
+
+  position: absolute;
+ 
+  width: 100%;
+  bottom: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(45, 101, 146);
+}
+
+.bg-image {
+  position: absolute;
+}
+
+.bg-top-circle {
+  top: -400px;
+  left: -100px;
+}
+
+.bg-top-botton {
+  bottom: -450px;
+  right: -100px;
+}
+
+
+main {
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+} 
+
+.profiles {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Opcional: limita el ancho máximo */
+  margin: 0 auto; /* Centra horizontalmente si es necesario */
+}
+
+.profiles__container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente las tarjetas */
+  align-items: center;    /* Centra verticalmente las tarjetas */
+  flex-wrap: wrap;        /* Permite que las tarjetas se ajusten en varias filas si es necesario */
+  gap: 20px;              /* Espaciado entre las tarjetas */
+  height: 100%;     
+}
+
+
+.card{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card__header{
+  position: relative;
+  height: 120px;
+  text-align: center;
+}
+.card__header-img-bg {
+  position: relative;
+  width: 100%;
+}
+
+.card__header-img-profile {
+  position: relative;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  top: -60px;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.card__body {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-bottom: 2px solid rgb(0 0 0 / 0.1);
+}
+
+.card__text{
+  margin-bottom: 10px;
+}
+.card__body-text-light {
+  color: hsl(227, 10%, 46%);
+}
+.card__footer {
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+.card__footer-item{
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0.5em;
+  width: 100px;
+  text-align: center;
+}
+
+.card__number {
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+}
